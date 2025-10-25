@@ -5,22 +5,21 @@ opam-version: "2.0"
 maintainer: "palmskog@gmail.com"
 version: "dev"
 
-homepage: "https://github.com/coq-community/huffman"
-dev-repo: "git+https://github.com/coq-community/huffman.git"
-bug-reports: "https://github.com/coq-community/huffman/issues"
-doc: "https://coq-community.github.io/huffman/"
+homepage: "https://github.com/rocq-community/huffman"
+dev-repo: "git+https://github.com/rocq-community/huffman.git"
+bug-reports: "https://github.com/rocq-community/huffman/issues"
 license: "LGPL-2.1-or-later"
 
-synopsis: "Coq proof of the correctness of the Huffman coding algorithm"
+synopsis: "Rocq proof of the correctness of the Huffman coding algorithm"
 description: """
-This projects contains a Coq proof of the correctness of the Huffman coding algorithm,
+This projects contains a Rocq proof of the correctness of the Huffman coding algorithm,
 as described in David A. Huffman's paper A Method for the Construction of Minimum-Redundancy
 Codes, Proc. IRE, pp. 1098-1101, September 1952."""
 
-build: ["dune" "build" "-p" name "-j" jobs]
+build: [make "-j%{jobs}%"]
+install: [make "install"]
 depends: [
-  "dune" {>= "3.5"}
-  "coq" {(>= "8.12" & < "8.20~") | (= "dev")}
+  "coq" {(>= "8.12" & <= "9.1~") | (= "dev")}
 ]
 
 tags: [

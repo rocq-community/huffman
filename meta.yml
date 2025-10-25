@@ -1,16 +1,15 @@
 ---
 fullname: Huffman
 shortname: huffman
-organization: coq-community
+organization: rocq-community
 community: true
 action: true
-coqdoc: true
-coqdoc_index: 'docs/latest/coqdoc/toc.html'
+coqdoc: false
 
-synopsis: Coq proof of the correctness of the Huffman coding algorithm
+synopsis: Rocq proof of the correctness of the Huffman coding algorithm
 
 description: |-
-  This projects contains a Coq proof of the correctness of the Huffman coding algorithm,
+  This projects contains a Rocq proof of the correctness of the Huffman coding algorithm,
   as described in David A. Huffman's paper A Method for the Construction of Minimum-Redundancy
   Codes, Proc. IRE, pp. 1098-1101, September 1952.
 
@@ -41,10 +40,12 @@ license:
 
 supported_coq_versions:
   text: 8.12 or later
-  opam: '{(>= "8.12" & < "8.20~") | (= "dev")}'
+  opam: '{(>= "8.12" & <= "9.1~") | (= "dev")}'
 
-tested_coq_opam_versions:
+tested_rocq_opam_versions:
 - version: 'dev'
+- version: '9.0'
+tested_coq_opam_versions:
 - version: '8.19'
 - version: '8.18'
 - version: '8.17'
@@ -102,5 +103,4 @@ documentation: |-
   ```
 
   [techreport]: https://hal.archives-ouvertes.fr/hal-02149909
-  [coqdoc]: https://coq-community.org/huffman/docs/latest/coqdoc/toc.html
 ---
