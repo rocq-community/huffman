@@ -8,10 +8,9 @@ Follow the instructions on https://github.com/coq-community/templates to regener
 [![Contributing][contributing-shield]][contributing-link]
 [![Code of Conduct][conduct-shield]][conduct-link]
 [![Zulip][zulip-shield]][zulip-link]
-[![coqdoc][coqdoc-shield]][coqdoc-link]
 
-[docker-action-shield]: https://github.com/coq-community/huffman/actions/workflows/docker-action.yml/badge.svg?branch=master
-[docker-action-link]: https://github.com/coq-community/huffman/actions/workflows/docker-action.yml
+[docker-action-shield]: https://github.com/rocq-community/huffman/actions/workflows/docker-action.yml/badge.svg?branch=master
+[docker-action-link]: https://github.com/rocq-community/huffman/actions/workflows/docker-action.yml
 
 [contributing-shield]: https://img.shields.io/badge/contributions-welcome-%23f7931e.svg
 [contributing-link]: https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md
@@ -22,11 +21,9 @@ Follow the instructions on https://github.com/coq-community/templates to regener
 [zulip-shield]: https://img.shields.io/badge/chat-on%20zulip-%23c1272d.svg
 [zulip-link]: https://coq.zulipchat.com/#narrow/stream/237663-coq-community-devs.20.26.20users
 
-[coqdoc-shield]: https://img.shields.io/badge/docs-coqdoc-blue.svg
-[coqdoc-link]: https://coq-community.org/huffman/docs/latest/coqdoc/toc.html
 
 
-This projects contains a Coq proof of the correctness of the Huffman coding algorithm,
+This projects contains a Rocq proof of the correctness of the Huffman coding algorithm,
 as described in David A. Huffman's paper A Method for the Construction of Minimum-Redundancy
 Codes, Proc. IRE, pp. 1098-1101, September 1952.
 
@@ -35,12 +32,12 @@ Codes, Proc. IRE, pp. 1098-1101, September 1952.
 - Author(s):
   - Laurent Théry (initial)
   - Karl Palmskog [<img src="https://zenodo.org/static/images/orcid.svg" height="14px" alt="ORCID logo" />](https://orcid.org/0000-0003-0228-1240)
-- Coq-community maintainer(s):
+- Rocq-community maintainer(s):
   - Karl Palmskog ([**@palmskog**](https://github.com/palmskog))
 - License: [GNU Lesser General Public License v2.1 or later](LICENSE)
-- Compatible Coq versions: 8.12 or later
+- Compatible Rocq/Coq versions: 8.12 or later
 - Additional dependencies: none
-- Coq namespace: `Huffman`
+- Rocq/Coq namespace: `Huffman`
 - Related publication(s):
   - [Formalising Huffman's algorithm](https://hal.archives-ouvertes.fr/hal-02149909) 
   - [A Method for the Construction of Minimum-Redundancy Codes](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf) doi:[10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898)
@@ -58,7 +55,7 @@ opam install coq-huffman
 To instead build and install manually, do:
 
 ``` shell
-git clone https://github.com/coq-community/huffman.git
+git clone https://github.com/rocq-community/huffman.git
 cd huffman
 make   # or make -j <number-of-cores-on-your-machine> 
 make install
@@ -99,4 +96,3 @@ decode code c;;
 ```
 
 [techreport]: https://hal.archives-ouvertes.fr/hal-02149909
-[coqdoc]: https://coq-community.org/huffman/docs/latest/coqdoc/toc.html
