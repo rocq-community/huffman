@@ -48,7 +48,7 @@ The easiest way to install the latest released version of Huffman
 is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell
-opam repo add coq-released https://coq.inria.fr/opam/released
+opam repo add rocq-released https://rocq-prover.org/opam/released
 opam install coq-huffman
 ```
 
@@ -65,8 +65,7 @@ make install
 ## Documentation
 
 For more information about the project, see the [technical report][techreport]
-describing the formalization. See also the [coqdoc presentation][coqdoc] of the
-Coq source files from the latest release.
+describing the formalization. 
 
 ### Running extracted code
 

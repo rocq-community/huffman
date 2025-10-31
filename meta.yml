@@ -72,9 +72,8 @@ documentation: |-
   ## Documentation
 
   For more information about the project, see the [technical report][techreport]
-  describing the formalization. See also the [coqdoc presentation][coqdoc] of the
-  Coq source files from the latest release.
-
+  describing the formalization. 
+  
   ### Running extracted code
 
   To extract code and obtain the program, run
